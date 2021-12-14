@@ -1,0 +1,73 @@
+#Background{    
+    background: #1e5799; /* Old browsers */
+    
+    /* background: -moz-linear-gradient(to right,  #1e5799,#7db9e8); 
+    background: -webkit-linear-gradient(to right,  #1e5799,#7db9e8);
+    background: linear-gradient(to right,  #1e5799,#7db9e8); */
+
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    
+    padding: 20px;
+}
+
+/* Botão de mudar usuário: */
+#changeUserButton{
+    background-color: #32b361;
+    border: solid 0px transparent;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: whitesmoke;
+
+    width: 120px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+#changeUserButton:hover{
+    background-color: #4ADE80;
+    font-size: 13px;
+}
+/* ======================= */
+
+#sectionPage{
+    margin-top: 20px;
+    display: flex;
+    height: 600px;
+    width: 100vw;
+}
+
+#BackgroundSVG{
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: opacity(0.3);
+}
+
+.machineListButton{
+    border: solid 0px transparent;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    #sectionPage{
+        width: 90%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    #Background{
+        overflow-y: auto;
+    }
+    #sectionPage{
+        padding-bottom: 50px;
+    }
+}
+

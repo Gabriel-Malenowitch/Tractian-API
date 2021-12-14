@@ -1,0 +1,43 @@
+*{
+    z-index: 1;
+}
+
+#MachineView{
+    display: flex;
+    background-color: whitesmoke;
+    border: solid 2px #32b361;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 0px 50px;
+}
+#MachineViewImage{
+    border-radius: 10px;
+    border: solid 5px #32b361;
+    width: 300px;
+    margin: 50px;
+}
+#statusIndicator{
+    width: 200px;
+    height: 20px;
+    border: solid 0px transparent;
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+    #MachineView{
+        margin: 0px auto;
+        height: auto;
+        width: 90%;
+        display: grid;
+    }
+    #MachineViewImage{
+        margin: 20px auto;
+        width: 200px;
+        margin: 5px;
+    }
+    #statusIndicator{
+        width: 200px;
+    }
+    
+}
+

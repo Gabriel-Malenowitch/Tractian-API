@@ -1,0 +1,105 @@
+#modalDiv{
+    width: 400px;
+    height: 400px;
+    background-color: whitesmoke;
+    border: solid 5px indigo;
+    border-radius: 5px;
+    color: indigo;
+
+    animation: borderAnimationModal 1s reverse infinite;
+
+    padding: 20px;
+    padding-top: 40px;
+    position: absolute;
+    z-index: 99;
+    display: grid;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+}
+.invisible{
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+@keyframes borderAnimationModal {
+    0%{
+        border: solid 5px rgb(119, 0, 130);
+    }
+    50%{
+        border: solid 5px rgb(112, 9, 185);
+    }
+    100%{
+        border: solid 5px indigo;
+    }
+}
+
+#modalDiv h2, #modalDiv h4{
+    text-align: center;
+}
+
+
+#modalDiv input{
+    margin: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    border: solid 0px transparent;
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+
+    background-color: indigo;
+    color: whitesmoke;
+}
+
+::placeholder{
+    color: rgb(165, 164, 164);
+}
+
+#modalDiv #searchButton{
+    margin: 20px auto;
+    padding: 10px;
+    background-color: tomato;
+
+    font-weight: 500;
+    font-size: 15px;
+    
+    border: solid 0px transparent;
+    border-radius: 10px;
+
+    width: 80%;
+    color: whitesmoke;
+}
+#modalDiv #searchButton:hover{
+    background-color: rgb(253, 110, 85);
+}
+
+#modalDiv #exitButton{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 10px;
+
+    background: transparent;
+    border: solid 0px transparent;
+    font-weight: bold;
+    font-size: 20px;
+    color: indigo;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+#modalDiv #exitButton:hover{
+    color: red;
+}
+
+@media (max-width: 500px) {
+    #modalDiv{
+        width: 300px;
+    }
+}
