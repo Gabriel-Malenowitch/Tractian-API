@@ -10,7 +10,7 @@ export function Modal(props: any){
             <h4>Por favor digite seu e-mail:</h4>
             <button onClick={Utils.closeModal} id="exitButton">X</button>
             <form>
-                <input value="teste1@tractian.com" type="text" id="email" placeholder="Example: teste1@tractian.com" />
+                <input type="text" id="email" placeholder="Example: teste1@tractian.com" />
             </form>
             <button onClick={props.search} id="searchButton">Pesquisar</button>
         </div>
